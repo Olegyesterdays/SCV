@@ -1,0 +1,10 @@
+src
+node_modules
+.vscode
+.git
+*.log
+*.tsbuildinfo
+vitest.config.ts
+vite.config.ts
+tsconfig*.json
+.prettierrc

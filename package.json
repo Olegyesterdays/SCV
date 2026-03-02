@@ -1,0 +1,41 @@
+{
+  "name": "@oleg_yesterdays/scv",
+  "version": "0.0.2",
+  "type": "module",
+  "main": "./dist/scv.umd.js",
+  "module": "./dist/scv.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/scv.es.js",
+      "require": "./dist/scv.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-tsc --declaration --emitDeclarationOnly && vite build",
+    "docs:dev": "histoire dev",
+    "docs:build": "histoire build",
+    "docs:preview": "histoire preview",
+    "version:patch": "npm version patch", 
+    "version:minor": "npm version minor",
+    "version:major": "npm version major"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@histoire/plugin-vue": "^1.0.0-beta.1",
+    "@types/node": "^24.10.1",
+    "@vitejs/plugin-vue": "^6.0.2",
+    "@vue/tsconfig": "^0.8.1",
+    "histoire": "^1.0.0-beta.1",
+    "sass-embedded": "^1.97.3",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1",
+    "vue-tsc": "^3.1.5"
+  }
+}
